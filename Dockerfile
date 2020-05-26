@@ -1,7 +1,6 @@
 FROM ubuntu:focal
 MAINTAINER Josh Bicking (joshbicking@comcast.net)
 
-ARG DEBIAN_FRONTEND="noninteractive"
 # Install required software
 RUN export DEBIAN_FRONTEND="noninteractive" && \
     apt-get update && \
