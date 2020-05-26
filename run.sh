@@ -11,7 +11,10 @@ github-webhook \
   --log=/var/log/webhook.log \
   --rule="push:ref == refs/heads/$BRANCH:/pull.sh" &
 
-jekyll build --watch --source /source --destination /site &
+cd /source
+bundle install
+bundle exec jekyll build --watch --source /source --destination /site &
+cd -
 
 sed "s|\\\$WEBHOOK_ENDPOINT|$WEBHOOK_ENDPOINT|g" /site.conf > /etc/nginx/sites-available/default
 
