@@ -12,6 +12,7 @@ github-webhook \
   --rule="push:ref == refs/heads/$BRANCH:/pull.sh" &
 
 cd /source
+bundle config set path /vendor
 bundle install
 bundle exec jekyll build --watch --source /source --destination /site &
 cd -
