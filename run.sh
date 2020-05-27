@@ -13,6 +13,7 @@ github-webhook \
 
 cd /source
 bundle config set path /vendor
+bundle config --local path /vendor
 bundle install
 bundle exec jekyll build --watch --source /source --destination /site &
 cd -
