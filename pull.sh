@@ -5,8 +5,10 @@ if [ ! -d /source/.git ]; then
 fi
 
 cd /source
+git stash
 git checkout $BRANCH
 git reset --hard
 git pull origin $BRANCH
+git stash pop
 cd -
 
