@@ -9,10 +9,10 @@ github-webhook \
   --path=$WEBHOOK_ENDPOINT \
   --secret=$WEBHOOK_SECRET \
   --log=/var/log/webhook.log \
-  --rule="push:ref == refs/heads/$BRANCH:/pull.sh" &
+  --rule="push:ref == 'refs/heads/$BRANCH':/pull.sh" &
 
 cd /source
-bundle config --local path /vendor
+bundle config set path /vendor
 bundle install
 bundle exec jekyll build --watch --source /source --destination /site &
 cd -
