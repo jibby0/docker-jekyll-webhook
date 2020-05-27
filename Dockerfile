@@ -7,6 +7,7 @@ RUN export DEBIAN_FRONTEND="noninteractive" && \
     apt-get install -y git nginx npm ruby-full build-essential zlib1g-dev ruby-dev
 
 RUN npm install -g github-webhook
+RUN gem install bundler
 
 # Configure installed software
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
