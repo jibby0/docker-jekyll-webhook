@@ -1,5 +1,5 @@
 FROM ubuntu:focal
-MAINTAINER Josh Bicking (joshbicking@comcast.net)
+MAINTAINER Josh Bicking (me@jibby.org)
 
 # Install required software
 RUN export DEBIAN_FRONTEND="noninteractive" && \

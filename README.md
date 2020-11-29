@@ -1,6 +1,6 @@
-# jbicking/jekyll-webhook
+# jibby0/jekyll-webhook
 
-`jbicking/jekyll-webhook` is a fork of [cmrn/jekyll-webhook](https://github.com/cmrn/docker-jekyll-webhook). This fork updates the Ubuntu version + supports Jekyll's newest packaging recommendations.
+`jibby0/jekyll-webhook` is a fork of [cmrn/jekyll-webhook](https://github.com/cmrn/docker-jekyll-webhook). This fork updates the Ubuntu version + supports Jekyll's newest packaging recommendations.
 
 This is a docker image which:
 
